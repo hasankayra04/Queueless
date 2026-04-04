@@ -5,17 +5,17 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_router/shelf_router.dart';
 
-import '../lib/database/in_memory_db.dart';
-import '../lib/patterns/event_bus.dart';
-import '../lib/services/auth_service.dart';
-import '../lib/services/business_service.dart';
-import '../lib/services/queue_manager.dart';
-import '../lib/services/inventory_service.dart';
-import '../lib/api/middleware.dart';
-import '../lib/api/handlers/auth_handler.dart';
-import '../lib/api/handlers/business_handler.dart';
-import '../lib/api/handlers/queue_handler.dart';
-import '../lib/api/handlers/inventory_handler.dart';
+import 'package:queueless_backend/database/in_memory_db.dart';
+import 'package:queueless_backend/patterns/event_bus.dart';
+import 'package:queueless_backend/services/auth_service.dart';
+import 'package:queueless_backend/services/business_service.dart';
+import 'package:queueless_backend/services/queue_manager.dart';
+import 'package:queueless_backend/services/inventory_service.dart';
+import 'package:queueless_backend/api/middleware.dart';
+import 'package:queueless_backend/api/handlers/auth_handler.dart';
+import 'package:queueless_backend/api/handlers/business_handler.dart';
+import 'package:queueless_backend/api/handlers/queue_handler.dart';
+import 'package:queueless_backend/api/handlers/inventory_handler.dart';
 
 void main(List<String> args) async {
   final port = int.tryParse(

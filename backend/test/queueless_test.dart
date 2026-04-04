@@ -2,16 +2,16 @@
 
 import 'package:test/test.dart';
 
-import '../lib/database/in_memory_db.dart';
-import '../lib/patterns/event_bus.dart';
-import '../lib/patterns/observer.dart';
-import '../lib/services/auth_service.dart';
-import '../lib/services/business_service.dart';
-import '../lib/services/queue_manager.dart';
-import '../lib/services/inventory_service.dart';
-import '../lib/models/user.dart';
-import '../lib/models/queue_entry.dart';
-import '../lib/models/inventory_item.dart';
+import 'package:queueless_backend/database/in_memory_db.dart';
+import 'package:queueless_backend/patterns/event_bus.dart';
+import 'package:queueless_backend/patterns/observer.dart';
+import 'package:queueless_backend/services/auth_service.dart';
+import 'package:queueless_backend/services/business_service.dart';
+import 'package:queueless_backend/services/queue_manager.dart';
+import 'package:queueless_backend/services/inventory_service.dart';
+import 'package:queueless_backend/models/user.dart';
+import 'package:queueless_backend/models/queue_entry.dart';
+import 'package:queueless_backend/models/inventory_item.dart';
 
 void main() {
   late InMemoryDatabase db;

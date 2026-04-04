@@ -47,7 +47,7 @@ add_subdirectory("runner")
 include(flutter/generated_plugins.cmake)
 
 # === Installation ===
-# By default, "weights" are installed under /usr/local/, which would require root.
+# By default, binaries are installed under /usr/local/, which would require root.
 # Packages can override this via the CMAKE_INSTALL_PREFIX.
 # The install prefix is also used to look for dependencies at build time.
 set(INSTALL_BUNDLE_DIR "${CMAKE_INSTALL_PREFIX}/bundle")

@@ -1,0 +1,12 @@
+# Dart/Flutter generated files
+.dart_tool/
+.packages
+pubspec.lock
+build/
+*.js.map
+*.g.dart
+
+# IDE
+.idea/
+.vscode/
+*.iml
